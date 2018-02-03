@@ -1,5 +1,5 @@
 ---
-title: Trading Lessions - CryptoCurrency
+title: Trading Lessons - CryptoCurrency
 date: 2018-01-28 23:05:38
 tags:
   - Learning
