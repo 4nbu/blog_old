@@ -8,15 +8,15 @@ category:
   - "MS-Office"
 #keywords:
 #clearReading: true
-#thumbnailImage: cover.jpg
+thumbnailImage: Excel-Logo-small.png
 #thumbnailImageUrl: write.jpg
 thumbnailImagePosition: left
-autoThumbnailImage: yes
+#autoThumbnailImage: yes
 metaAlignment: center
 meta: true
 coverMeta: in
 coverSize: partial
-coverImage: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/2000px-Microsoft_Excel_2013_logo.svg.png
+coverImage: Excel-Logo.png
 comments: true
 actions: true
 ---

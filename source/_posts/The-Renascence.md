@@ -7,15 +7,15 @@ category:
   - General
 #keywords:
 #clearReading: true
-#thumbnailImage: cover.jpg
+thumbnailImage: pexels-photo-261763-small.jpg
 #thumbnailImageUrl: write.jpg
 thumbnailImagePosition: left
-autoThumbnailImage: yes
+#autoThumbnailImage: yes
 metaAlignment: center
 meta: false
 coverMeta: in
 coverSize: partial
-coverImage: https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?w=940&h=650&auto=compress&cs=tinysrgb
+coverImage: pexels-photo-261763.jpeg
 comments: true
 actions: true
 ---

@@ -8,15 +8,15 @@ category:
   - "Crypto Currency"
 keywords: Trading, Crypto, Currency, Beginner, Guide
 clearReading: true
-#thumbnailImage: cover.jpg
+thumbnailImage: bitcoin_PNG6.png
 #thumbnailImageUrl: write.jpg
 thumbnailImagePosition: left
-autoThumbnailImage: yes
+#autoThumbnailImage: yes
 metaAlignment: center
 meta: true
 coverMeta: in
 coverSize: partial
-coverImage: http://www.iamwire.com/wp-content/uploads/2017/11/cryptocurrency-1.jpg
+coverImage: cryptocurrency.jpg
 comments: true
 actions: true
 ---

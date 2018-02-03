@@ -8,15 +8,15 @@ category:
   - Blog
 keywords: Hexo, Tranquilpeak, Static Blog, Beginner, Guide
 clearReading: true
-thumbnailImage: https://raw.githubusercontent.com/hexojs/awesome-hexo/master/hexo-logo.png
+thumbnailImage: hexo-logo.png
 #thumbnailImageUrl: write.jpg
 thumbnailImagePosition: left
-autoThumbnailImage: yes
+#autoThumbnailImage: yes
 metaAlignment: center
 meta: true
 coverMeta: in
 coverSize: partial
-coverImage: https://blog.predovan.com/images/banners/hexo.jpg
+coverImage: hexo.jpg
 comments: true
 actions: true
 ---
