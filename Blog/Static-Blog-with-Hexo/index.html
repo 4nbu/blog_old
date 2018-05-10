@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="anbuchelva&#39;s blog">
+    <title>Static Blog with Hexo - anbuchelva&#39;s blog</title>
+    <meta name="author" content="Anbuselvan Palaniyandi">
+    
+        <meta name="keywords" content="Hexo, Tranquilpeak, Static Blog, Beginner, Guide">
+    
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <meta name="description" content="It became common for all the authors to write why/how they have setup their blogs.  It serves two purposes, a newbie can understand how to setup a new blog following the experience and for personal sa">
+<meta name="keywords" content="Hexo, Tranquilpeak, Static Blog, Beginner, Guide">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Static Blog with Hexo">
+<meta property="og:url" content="/Blog/Static-Blog-with-Hexo/index.html">
+<meta property="og:site_name" content="anbuchelva&#39;s blog">
+<meta property="og:description" content="It became common for all the authors to write why/how they have setup their blogs.  It serves two purposes, a newbie can understand how to setup a new blog following the experience and for personal sa">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/Blog/Static-Blog-with-Hexo/themes_folder.png">
+<meta property="og:image" content="/Blog/Static-Blog-with-Hexo/run_server.png">
+<meta property="og:updated_time" content="2018-05-10T17:34:12.544Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Static Blog with Hexo">
+<meta name="twitter:description" content="It became common for all the authors to write why/how they have setup their blogs.  It serves two purposes, a newbie can understand how to setup a new blog following the experience and for personal sa">
+<meta name="twitter:image" content="/Blog/Static-Blog-with-Hexo/themes_folder.png">
+<meta name="twitter:creator" content="@anbuchelva">
+    
+        <link rel="publisher" href="https://plus.google.com/+anbuchelva"/>
+    
+    
+        
+    
+    
+        <meta property="og:image" content="/assets/images/anbuchelva.jpg"/>
+    
+    
+        <meta property="og:image" content="/Blog/Static-Blog-with-Hexo/hexo-logo.png"/>
+        <meta class="swiftype" name="image" data-type="enum" content="/Blog/Static-Blog-with-Hexo/hexo-logo.png" />
+    
+    
+        <meta property="og:image" content="/Blog/Static-Blog-with-Hexo/hexo.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="/Blog/Static-Blog-with-Hexo/hexo.jpg" />
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style-epvaxso668fcehcvafsznmvxe2rxfaxewuphwz4salvpyeajx2vu5cak878z.min.css">
+    <!--STYLES END-->
+    
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-108738182-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">anbuchelva&#39;s blog</a>
+    </div>
+    
+        
+            <a  class="header-right-icon open-algolia-search"
+                href="#search">
+        
+        
+            <i class="fa fa-lg fa-search"></i>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+
+        
+    
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="/assets/images/anbuchelva.jpg" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">Anbuselvan Palaniyandi</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>an <strong>EPM</strong> specialist and an <strong>Android</strong> enthusiast</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                            title="Home"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-categories"
+                            
+                            title="Categories"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                            title="Tags"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                            title="Archives"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link open-algolia-search"
+                             href="#search"
+                            
+                            title="Search"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/about"
+                            
+                            title="About"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="https://github.com/anbuchelva"
+                            title="GitHub"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="https://twitter.com/anbuchelva"
+                            title="Twitter"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-twitter" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="https://plus.google.com/+anbuchelva"
+                            title="Google +"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-google-plus" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Google +</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="https://in.linkedin.com/in/anbuchelva"
+                            title="LinkedIn"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-linkedin" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">LinkedIn</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="mailto:anbu@tsttc.pw"
+                            title="Mail"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-envelope-o" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="https://keybase.io/anbuchelva"
+                            title="Keybase"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-key" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Keybase</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                            title="RSS"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+        <div class="post-header-cover
+                    text-center
+                    post-header-cover--partial"
+             style="background-image:url('/Blog/Static-Blog-with-Hexo/hexo.jpg');"
+             data-behavior="4">
+            
+                <div class="post-header main-content-wrap text-center">
+    
+        <h1 class="post-title" itemprop="headline">
+            Static Blog with Hexo
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time itemprop="datePublished" datetime="2018-02-02T06:56:54+00:00">
+	
+		    Feb 02, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/Blog/">Blog</a>
+
+
+    
+</div>
+
+    
+</div>
+            
+        </div>
+
+            <div id="main" data-behavior="4"
+                 class="hasCover
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <p>It became common for all the authors to write why/how they have setup their blogs.  It serves two purposes, a newbie can understand how to setup a new blog following the experience and for personal satisfaction. </p>
+<a id="more"></a>
+<p>This <a href="/General/The-Renascence/">post</a> explain why I have setup this blog. So, I have to explain how did I setup.<br><h1 id="table-of-contents">Table of Contents</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ingrediants"><span class="toc-text">Ingrediants</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#The-Setup"><span class="toc-text">The Setup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Setup-Hexo"><span class="toc-text">Setup Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Customization"><span class="toc-text">Customization</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setup-Themes-folder"><span class="toc-text">Setup Themes folder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Build-Theme"><span class="toc-text">Build Theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Enable-pages-like-archive-tags-etc"><span class="toc-text">Enable pages like archive, tags, etc.,</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Run-Server"><span class="toc-text">Run Server</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Push-it-to-github-repo"><span class="toc-text">Push it to github repo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Custom-Domain"><span class="toc-text">Custom Domain</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Enabling-Continuous-Integration"><span class="toc-text">Enabling Continuous Integration</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Questions"><span class="toc-text">Questions</span></a></li></ol></p>
+<h1 id="Ingrediants"><a href="#Ingrediants" class="headerlink" title="Ingrediants"></a>Ingrediants</h1><ol>
+<li>A PC that run on linux desktop environment (you may google how to setup hexo in windows environment)</li>
+<li><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> - The Engine</li>
+<li><a href="https://github.com" target="_blank" rel="noopener">Github</a> - hosting</li>
+<li><a href="https://domains.google.com" target="_blank" rel="noopener">Google Domain</a> - custom domain</li>
+<li><a href="https://cloudflare.com" target="_blank" rel="noopener">Cloudflare</a> - DNS configuration, security, etc.,</li>
+<li><a href="https://travis-ci.org" target="_blank" rel="noopener">Travis-CI</a> - Continuous Integration</li>
+</ol>
+<p>Looks scary? Definitely No.</p>
+<h1 id="The-Setup"><a href="#The-Setup" class="headerlink" title="The Setup"></a>The Setup</h1><h2 id="Setup-Hexo"><a href="#Setup-Hexo" class="headerlink" title="Setup Hexo"></a>Setup Hexo</h2><p>A complete guide is available <a href="https://hexo.io/docs/#Installation" target="_blank" rel="noopener">here</a> to install dependencies and Hexo.  You may use the following code, if you are running Ubuntu<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install git-core</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install nodejs</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install npm</span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>Once Hexo is installed, use the following commands to inialize the project.<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="symbol">&lt;folder&gt;</span></span><br><span class="line"><span class="keyword">cd</span> <span class="symbol">&lt;folder&gt;</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>If you wish to use the default <strong>landscape</strong> theme, use <code>hexo new post &lt;post name&gt;</code> command to create a new post.<br>You can stop reading further and good to go <a href="#Run-Server">here</a>.  </p>
+<hr>
+<h2 id="Customization"><a href="#Customization" class="headerlink" title="Customization"></a>Customization</h2><p>If you wish to use the <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="noopener">Tranquilpeak</a> was developed by <a href="https://github.com/LouisBarranqueiro" target="_blank" rel="noopener">Louis Barranqueiro</a> theme as like this blog, follow the below steps. This theme needs some additional setup as mentioned below.  </p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> Setup themes folder &amp; customization</li>
+<li style="list-style: none"><input type="checkbox"> Build theme</li>
+<li style="list-style: none"><input type="checkbox"> Enable pages like archive, tags, etc.,</li>
+<li style="list-style: none"><input type="checkbox"> Run Server</li>
+<li style="list-style: none"><input type="checkbox"> Create post, page, etc.,</li>
+</ul>
+<p>I used the theme’s git repository without any modifications as git submodule.  So that, whenever the theme is upgraded to new version, I need not to do anything on the theme template or re-sync from beginning.  I have a separate folder called <a href="https://github.com/anbuchelva/anbuchelva.github.io/tree/source/themes/customize_tranquilpeak" target="_blank" rel="noopener">customize_tranquilpeak</a>, which needs to be copied into the <code>/themes/tranquilpeak/</code> folder. Refer my <a href="https://github.com/anbuchelva/anbuchelva.github.io/tree/source/themes" target="_blank" rel="noopener">git repository themes</a> to see how do I manage the theme with my customizations.  </p>
+<h2 id="Setup-Themes-folder"><a href="#Setup-Themes-folder" class="headerlink" title="Setup Themes folder"></a>Setup Themes folder</h2><p>Navigate to your project folder in the terminal</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#navigate</span> to themes folder</span><br><span class="line">cd themes</span><br><span class="line"><span class="selector-id">#delete</span> the default theme</span><br><span class="line">rm -rf landscape </span><br><span class="line"><span class="selector-id">#clone</span> Tranquilpeak theme under themes</span><br><span class="line">git clone https:<span class="comment">//github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git tranquilpeak</span></span><br><span class="line"><span class="selector-id">#create</span> <span class="selector-tag">a</span> folder <span class="keyword">for</span> your customizations</span><br><span class="line">mkdir customize_tranquilpeak</span><br></pre></td></tr></table></figure>
+<p>Your folder should look like this screen shot after this.<br><img src="themes_folder.png" alt="Themes folder"></p>
+<p>Now copy the <code>_config.yml</code> and <code>languages\en.yml</code> files under <code>customize_tranquilpeak</code> folder and customize these files to match with your requirement.  You may refer <a href="https://github.com/anbuchelva/anbuchelva.github.io/tree/source/themes/customize_tranquilpeak" target="_blank" rel="noopener">here</a> for sample. For complete customization guide refer this <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md" target="_blank" rel="noopener">link</a>.</p>
+<h2 id="Build-Theme"><a href="#Build-Theme" class="headerlink" title="Build Theme"></a>Build Theme</h2><p>Run the following commands to build theme.<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cp -rf themes/customize_tranquilpeak/* themes/tranquilpeak</span><br><span class="line">cd themes/tranquilpeak</span><br><span class="line">npm <span class="keyword">install</span></span><br><span class="line">sudo npm <span class="keyword">install</span> grunt-cli -g</span><br><span class="line">sudo npm <span class="keyword">install</span> bower -g</span><br><span class="line">bower <span class="keyword">install</span></span><br><span class="line">grunt buildProd</span><br><span class="line">cd ..</span><br></pre></td></tr></table></figure></p>
+<h2 id="Enable-pages-like-archive-tags-etc"><a href="#Enable-pages-like-archive-tags-etc" class="headerlink" title="Enable pages like archive, tags, etc.,"></a>Enable pages like archive, tags, etc.,</h2><p>Refer these links for creating the common pages.</p>
+<ul>
+<li><a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#enable-all-categories-page" target="_blank" rel="noopener">Enable all-categories page</a></li>
+<li><a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#enable-all-tags-page" target="_blank" rel="noopener">Enable all-tags page</a></li>
+<li><a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#enable-all-archives-page" target="_blank" rel="noopener">Enable all-archives page</a></li>
+</ul>
+<h2 id="Run-Server"><a href="#Run-Server" class="headerlink" title="Run Server"></a>Run Server</h2><p>Run <code>hexo serve -w</code> to start the server. When you see this output, you are ready to open your browser and see the blog in <code>localhost:4000</code>.<br><img src="run_server.png" alt="Terminal"></p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo <span class="keyword">generate</span></span><br></pre></td></tr></table></figure>
+<p>The above commands would generate the static website, which can be pushed to github.</p>
+<h1 id="Push-it-to-github-repo"><a href="#Push-it-to-github-repo" class="headerlink" title="Push it to github repo"></a>Push it to github repo</h1><p>Create an account in <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>, if you don’t have one.  Then create a repository as <code>&lt;your user id&gt;.github.io</code><br>run the following commands in your <code>project/source</code> folder.<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git commit -m <span class="string">"initialize blog"</span></span><br><span class="line">git remote <span class="builtin-name">add</span> origin git@github.com:&lt;your<span class="built_in"> user </span>id&gt;/&lt;your<span class="built_in"> user </span>id&gt;.github.io.git</span><br><span class="line">git<span class="built_in"> config </span>--global user.name &lt;your name&gt;</span><br><span class="line">git<span class="built_in"> config </span>--global user.email &lt;your email id&gt;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>This will push all your work to <code>&lt;your user id&gt;.github.io</code> in <code>master</code> branch. You can push the updates by running the following commands.</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> .</span></span><br><span class="line"><span class="bash">git commit -m &lt;commit message&gt;</span></span><br><span class="line"><span class="bash">git push origin master</span></span><br></pre></td></tr></table></figure>
+<h1 id="Custom-Domain"><a href="#Custom-Domain" class="headerlink" title="Custom Domain"></a>Custom Domain</h1><ul>
+<li>Create a file named “CNAME” in the source folder and add your custom domain without any prefix for E.g., <code>tsttc.pw</code></li>
+<li>Just ignore the step, if you don’t have a custom domain and your blog would be available in <code>&lt;your github user name&gt;.github.io</code></li>
+</ul>
+<h1 id="Enabling-Continuous-Integration"><a href="#Enabling-Continuous-Integration" class="headerlink" title="Enabling Continuous Integration"></a>Enabling Continuous Integration</h1><p>I thought of covering the CI as well, but the post became very long than I expected. So, I will create a separate post and link here for enabling CI using different services.</p>
+<h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h1><p><strong><em>So, guess how much I would have paid for using those services?</em></strong></p>
+<ul>
+<li>Everything is free of cost except the domain, which costs $9 per annum. </li>
+</ul>
+<p><strong><em>Why do you use Hexo?</em></strong></p>
+<ul>
+<li>Blogger and Wordpress are providing ready made options.  But I wanted to use a static blog using markdown language, gives more customization.</li>
+</ul>
+<p><strong><em>Why not Jekyll or other static generators?</em></strong></p>
+<ul>
+<li>Jekyll is simple but slow</li>
+<li>I have explored different static site generators like Jekyll, Hugo, Ghost and finally settled with Hexo. </li>
+</ul>
+
+            
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Blog/">Blog</a> <a class="tag tag--primary tag--small t-link" href="/tags/Learning/">Learning</a>
+
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/MS-Office/MS-Excel-and-Me/" data-tooltip="MS Excel and Me!" aria-label="NEXT: MS Excel and Me!">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/Blog/Static-Blog-with-Hexo/" title="Share on Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/Blog/Static-Blog-with-Hexo/" title="Share on Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/Blog/Static-Blog-with-Hexo/" title="Share on Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="Table of Contents">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+        
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 Anbuselvan Palaniyandi. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/MS-Office/MS-Excel-and-Me/" data-tooltip="MS Excel and Me!" aria-label="NEXT: MS Excel and Me!">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/Blog/Static-Blog-with-Hexo/" title="Share on Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/Blog/Static-Blog-with-Hexo/" title="Share on Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/Blog/Static-Blog-with-Hexo/" title="Share on Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="Table of Contents">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <i id="btn-close-shareoptions" class="fa fa-close"></i>
+    <ul class="share-options">
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/Blog/Static-Blog-with-Hexo/">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=/Blog/Static-Blog-with-Hexo/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=/Blog/Static-Blog-with-Hexo/">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+            
+        </div>
+        
+
+
+    
+        
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/anbuchelva.jpg" alt="Author&#39;s picture"/>
+        
+            <h4 id="about-card-name">Anbuselvan Palaniyandi</h4>
+        
+            <div id="about-card-bio"><p>an <strong>EPM</strong> specialist and an <strong>Android</strong> enthusiast</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p><em>Sutherland Global Services</em></p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Chennai, India
+            </div>
+        
+    </div>
+</div>
+
+        
+            <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    />
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a class="link-unstyled" href="/General/The-Renascence/">
+                            <img class="media-image" src="/General/The-Renascence/pexels-photo-261763-small.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="/General/The-Renascence/">
+                            <h3 class="media-heading">The Renascence</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Nov 15, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>This has been very long time, since I stopped writing blogs. I started with blogger in 2008; was writing about my phases of life, learning, activities, people I missed/lost, poems, festival, tips, tricks, etc.,<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a class="link-unstyled" href="/MS-Office/MS-Excel-and-Me/">
+                            <img class="media-image" src="/MS-Office/MS-Excel-and-Me/Excel-Logo-small.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="/MS-Office/MS-Excel-and-Me/">
+                            <h3 class="media-heading">MS Excel and Me!</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jan 5, 2018
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Can someone feed his/her family only knowing MS Excel?  Yes, it did for me for few years.  During my early days, I was learning excel and became master on it and it helped me feed my family.<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a class="link-unstyled" href="/Blog/Static-Blog-with-Hexo/">
+                            <img class="media-image" src="/Blog/Static-Blog-with-Hexo/hexo-logo.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="/Blog/Static-Blog-with-Hexo/">
+                            <h3 class="media-heading">Static Blog with Hexo</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Feb 2, 2018
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>It became common for all the authors to write why/how they have setup their blogs.  It serves two purposes, a newbie can understand how to setup a new blog following the experience and for personal satisfaction. </p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                3 posts found
+            </p>
+        </div>
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/assets/images/cover1.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/script-03neoxppcffcpumzhxpd9wgfhrkbzkvomfjz0olbvoaqdg7v2o3ltmcbel3m.min.js"></script>
+<!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = '/Blog/Static-Blog-with-Hexo/';
+                 
+                    this.page.identifier = '/Blog/Static-Blog-with-Hexo/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'anbublog';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+        var algoliaClient = algoliasearch('SKBO2O8OGJ', '57106995fd15ca62a4b14bba0b7fadf7');
+        var algoliaIndex = algoliaClient.initIndex('tsttc.pw');
+    </script>
+
+
+    </body>
+</html>
