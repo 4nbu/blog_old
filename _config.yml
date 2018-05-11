@@ -80,7 +80,7 @@ deploy:
   type: git
   repo: git@github.com:anbuchelva/blog.git
   branch: master
-  message: Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }} GMT
+  message: Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }} GMT [skip ci]
   
 feed:
     type: atom

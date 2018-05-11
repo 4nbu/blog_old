@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:  
+    docker:
+      - image: circleci/node:8.9.1
+    branches:
+      only:
+        - source
+      ignore:
+        - master
+    working_directory: ~/temp
+    steps:
+      - checkout
+      - run: sudo npm install -g hexo-cli
+      - run: sudo npm install -g grunt-cli
+      - run: git submodule init
+      - run: git submodule update
+      - run: git config --global user.name ${GIT_USER_NAME}
+      - run: git config --global user.email ${GIT_USER_EMAIL}
+      - run: sed -i'' "s~git@github.com:anbuchelva/blog.git~https://${GH_TOKEN}:x-oauth-basic@github.com/anbuchelva/blog.git~" _config.yml
+      - restore_cache:
+          key: x-cache-{{ checksum "package.json" }}
+      - restore_cache:
+          key: y-cache-{{ checksum "./themes/tranquilpeak/package.json" }}
+      - run: sudo npm install
+      - run: cp -rf themes/customize_tranquilpeak/* themes/tranquilpeak
+      - run: cd themes/tranquilpeak && npm install
+      - save_cache:
+          key: x-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - save_cache:
+          key: y-cache-{{ checksum "./themes/tranquilpeak/package.json" }}
+          paths:      
+            - ./themes/tranquilpeak/node_modules
+      - run: cd themes/tranquilpeak && sudo npm install grunt-cli -g
+      - run: cd themes/tranquilpeak && sudo npm install bower -g
+      - run: cd themes/tranquilpeak && bower install
+      - run: cd themes/tranquilpeak && grunt buildProd
+      - run: hexo clean
+      - run: hexo algolia
+      - run: hexo generate
+      - run: hexo deploy

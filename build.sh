@@ -13,4 +13,5 @@ grunt buildProd
 cd ..
 hexo clean
 hexo algolia
+hexo generate
 hexo deploy
