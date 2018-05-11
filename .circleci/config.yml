@@ -39,5 +39,4 @@ jobs:
       - run: cd themes/tranquilpeak && grunt buildProd
       - run: hexo clean
       - run: hexo algolia
-      - run: hexo generate
       - run: hexo deploy

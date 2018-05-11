@@ -1,8 +1,0 @@
-version: 2
-jobs:
-  build:
-    branches:
-      only:
-        - source
-      ignore:
-        - master
